@@ -44,12 +44,12 @@ Manual calculations were performed to determine resistor values (R1, R2, RC) bas
 ### 2. LT-Spice Circuit Simulation
 The circuit was simulated using LT-Spice to verify gain, signal quality, and stability.
 
-![LT-Spice Circuit Design](images/Ltspice.png)
+![LT-Spice Circuit Design](images/Ltspice)
 
 ### 3. PCB Design and Fabrication
 The PCB was designed, etched, and soldered following standard fabrication processes.
 
-![PCB Layout](images/pcb_layout.png)
+![PCB Layout](images/PCBDesign.jpeg)
 
 ### 4. Results
 
@@ -78,7 +78,7 @@ The PCB was validated through real-world testing, confirming the accuracy of sim
 
 | Hand Analysis | PCB Fabrication | Final Circuit |
 |:-------------:|:---------------:|:-------------:|
-| ![Hand Analysis](images/hand_analysis.png) | ![Etching Process](images/etching_process.png) | ![Final Amplifier](images/final_circuit.png) |
+| ![Hand Analysis](images/HandAnalysis.jpeg) | ![Etching Process](images/Process.jpeg) | ![Final Amplifier](images/FinalAmplifier.jpeg) |
 
 ---
 
