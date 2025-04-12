@@ -1,106 +1,88 @@
 # Audio Amplifier Project
 
-
-![Zewail University Logo]([https://github.com/user-attachments/assets/fdb333e4-2ffe-4f90-a460-0b892389427e])
-
-**Electro-Optic Sensors Project**  
-**Authors:** Mohammed Harraz - Amr Khaled  
+**Authors:** Mohammed Harraz & Amr Khaled  
 **Mentor:** Dr. Nehad Moustafa  
-**Institution:** Zewail University, Egypt  
+**Zewail University, Egypt**
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
-This project focuses on designing and building a **three-stage transistor-based audio amplifier**.  
-The goal is to amplify an input audio signal with a stable **voltage gain (Av) of 4.5**, and allow dynamic control of the gain.  
-The design emphasizes low distortion, reliable PCB implementation, and real-world validation through measurements.
+This project focuses on designing and implementing a three-stage transistor-based audio amplifier.  
+The objective was to achieve a voltage gain (Av) of approximately 4.5, while maintaining stable operation and providing dynamic gain control.
 
----
-
-## 🛠️ Project Structure
-
-### 1. Abstract
-A brief overview of the design objectives:  
-- Amplify audio signals with Av ≈ 4.5  
-- Dynamic gain control  
-- Operate at 12V DC supply  
-- Ensure circuit stability and efficiency  
-
-### 2. Introduction
-Importance of audio amplifiers and key design aspects such as:  
-- Proper component selection  
-- Circuit modifications for gain control  
-- Testing via simulation and practical measurements  
-
-### 3. Circuit Design
-
-#### Hand Analysis
-- Calculated resistor values (R1, R2, RC) using circuit theory.
-- Thevenin equivalent model used for biasing calculations.
-
-#### LT-Spice Circuit Simulation
-- Simulation of the designed amplifier circuit to verify theoretical gain and performance.
-
-![LT-Spice Simulation](insert-simulation-image-link-here)
-
-### 4. PCB Design
-
-#### PCB Components
-- 3 Transistors: 2SC1815 and 2N3904
-- Resistors and capacitors carefully selected based on design
-- Output: 600Ω speaker
-
-#### Etching Process
-- PCB fabricated by transferring design, etching copper, and soldering components.
-
-![PCB Layout](insert-pcb-layout-image-link-here)
-![Final PCB](insert-final-pcb-image-link-here)
+The project includes:
+- Theoretical circuit analysis
+- LT-Spice simulations
+- PCB design and fabrication
+- Real-world testing and evaluation
 
 ---
 
-## 📈 Results
+## Tools and Components
 
-| Parameter           | Theoretical | Simulated | Measured |
-|---------------------|-------------|-----------|----------|
-| Voltage Gain (Av)    | 4.5         | 4.48      | 4.42     |
-| Output Voltage (Vo)  | 3.479 V     | N/A       | 4.17 V   |
-
-- **Signal Quality:** Minimal distortion, good frequency response (20 Hz – 20 kHz).  
-- **PCB Performance:** Stable, compact design with excellent thermal performance.
-
----
-
-## ✅ Conclusion
-
-The designed amplifier successfully achieved the desired gain and output voltage.  
-The PCB implementation was effective in transferring simulated results into real-world measurements.  
-This project demonstrates a strong link between theoretical design, simulation, and practical execution.
+- **Transistors:** 2SC1815, 2N3904
+- **Resistors:**
+  - R1 = 6.32 kΩ
+  - R2 = 11.96 kΩ
+  - RC = 2.7 kΩ
+- **Capacitors:**
+  - C1 = 0.1 µF
+  - C2 = 47 µF
+  - C3 = 220 µF
+- **Supply Voltage:** 12V
+- **Output Load:** 600 Ω speaker
+- **Software:** LT-Spice (for simulation)
 
 ---
 
-## 📂 Contents
+## Project Details
 
-- Hand Calculations
-- LT-Spice Simulations
-- PCB Layout and Fabrication
-- Experimental Results
-- Final Analysis and Conclusions
+### 1. Hand Analysis
+Manual calculations were performed to determine resistor values (R1, R2, RC) based on the required gain and supply voltage.
+
+### 2. LT-Spice Circuit Simulation
+The circuit was simulated using LT-Spice to verify gain, signal quality, and stability.
+
+![LT-Spice Circuit Design](images/ltspice_circuit.png)
+
+### 3. PCB Design and Fabrication
+The PCB was designed, etched, and soldered following standard fabrication processes.
+
+![PCB Layout](images/pcb_layout.png)
+
+### 4. Results
+
+| Metric                | Theoretical | Simulated | Measured  |
+|-----------------------|-------------|-----------|-----------|
+| Voltage Gain (Av)     | 4.5         | 4.48      | 4.42      |
+| Output Voltage (Vo)   | 3.479V      | —         | 4.17V     |
+
+- **Signal Quality:** Minimal distortion observed within the full audio frequency range (20 Hz – 20 kHz).
+- **PCB Performance:** Compact, thermally efficient, and stable.
 
 ---
 
-## 📸 Gallery
+## Conclusion
 
-> Add your project images below by uploading them to GitHub and inserting links.
+The audio amplifier project successfully achieved the target specifications:
+- Voltage gain close to the desired value
+- Reliable and stable circuit operation
+- Effective translation from theoretical design to practical implementation
 
-- LT-Spice Circuit Simulation  
-- PCB Layout and Etching  
-- Final Assembled PCB  
-- Test Results  
+The PCB was validated through real-world testing, confirming the accuracy of simulations and hand analysis.
 
 ---
 
-## 📝 License
+## Project Images
 
-This project is part of academic coursework at Zewail University.  
-© 2025 Mohammed Harraz, Amr Khaled. All rights reserved.
+| Hand Analysis | PCB Fabrication | Final Circuit |
+|:-------------:|:---------------:|:-------------:|
+| ![Hand Analysis](images/hand_analysis.png) | ![Etching Process](images/etching_process.png) | ![Final Amplifier](images/final_circuit.png) |
+
+---
+
+## License
+
+This project was developed for academic purposes at Zewail University.  
+It may be reused and modified for educational or personal projects.
